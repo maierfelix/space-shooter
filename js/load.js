@@ -15,12 +15,12 @@ let load = (src) => {
 
 let res = [
   "js/immediate.js",
+  "js/render.js",
   "js/cfg.js",
   "js/enum.js",
   "js/global.js",
   "js/entities.js",
   "js/io.js",
-  "js/render.js",
   "js/update.js",
   "js/math.js",
   "js/main.js",

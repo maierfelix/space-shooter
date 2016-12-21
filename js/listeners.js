@@ -1,7 +1,5 @@
 "use strict";
 
-window.addEventListener("resize", resize);
-
 window.addEventListener("mousemove", (e) => {
   e.preventDefault();
   if (ship === null) return void 0;

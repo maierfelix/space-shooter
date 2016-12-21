@@ -19,6 +19,8 @@ Entities:
  * Magnet: Is a magnet
  * Shield: Does shit
 
+Configuration file is [here](https://github.com/maierfelix/space-shooter/blob/master/js/cfg.js).
+
 ### Known bugs:
  * Resizing window as well as overlays (disabled right now) results in very slow running code
  * Some positioning (e.g. ship bullets)
