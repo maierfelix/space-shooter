@@ -201,7 +201,7 @@ class Entity {
   }
 
   updateShield() {
-
+    /*
     let shield = this.shield;
     shield.angle += 0.05;
 
@@ -210,7 +210,9 @@ class Entity {
 
     shield.x = (target.x) + radius * Math.cos(shield.angle);
     shield.y = (target.y) + radius * Math.sin(shield.angle);
-
+    */
+    this.shield.color += 4;
+    if (this.shield.color >= 360) this.shield.color = 0;
   }
 
   updateMagnetTimer() {
@@ -526,6 +528,7 @@ class Shield extends Package {
   constructor(obj) {
     super(obj);
     this.angle = 4.9;
+    this.color = 0;
     this.duration = SHIELD_BRONZE_DURATION;
     this.decrease = SHIELD_BRONZE_DECREASE_FACTOR;
     this.setTexture("shield_bronze");
@@ -545,8 +548,6 @@ class Shield extends Package {
         entity.shield = this;
       }
     }
-    if (entity.shield !== this) {
-      this.remove();
-    }
+    this.remove();
   }
 };
