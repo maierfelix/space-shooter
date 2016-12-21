@@ -2,7 +2,7 @@
 
 A simple space shooter I hacked together in the past weeks. Don't expect much - no levels, just boom-boom.
 
-[Demo](http://maierfelix.github.io/space-shooter/)<br/>
+Play the demo [here](http://maierfelix.github.io/space-shooter/)<br/>
 <a href="http://i.imgur.com/o9TLWKJ.jpg"><img src="http://i.imgur.com/o9TLWKJ.jpg" align="left"/></a><br/>
 
 Controls:
