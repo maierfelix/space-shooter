@@ -463,6 +463,34 @@ let renderEntity = (entity) => {
     -(sprite.width/2)*SCALE, -(sprite.height/2)*SCALE,
     sprite.width*SCALE, sprite.height*SCALE
   );
+  if (entity.shield !== null) {
+    ctx.beginPath();
+    ctx.globalAlpha = entity.shield.duration/1e4;
+    ctx.fillStyle = `hsl(${entity.shield.color}, 100%, 27%)`;
+    ctx.arc(
+      0, 0,
+      ((entity.radius*2)*DIM)*SCALE,
+      0,
+      Math.PI * 2,
+      true
+    );
+    ctx.fill();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.globalAlpha = 0.75;
+    ctx.lineWidth = 2.5 * SCALE;
+    ctx.strokeStyle = `hsl(${entity.shield.color}, 100%, 50%)`;
+    ctx.arc(
+      0, 0,
+      ((entity.radius*2)*DIM)*SCALE,
+      0,
+      Math.PI * 2,
+      true
+    );
+    ctx.stroke();
+    ctx.closePath();
+    ctx.globalAlpha = 1.0;
+  }
   ctx.setTransform(1, 0, 0, 1, 0, 0);
 
   if (opacity !== 1) ctx.globalAlpha = 1;
