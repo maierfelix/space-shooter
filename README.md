@@ -25,6 +25,7 @@ Configuration file is [here](https://github.com/maierfelix/space-shooter/blob/ma
  * Resizing window as well as overlays (disabled right now) results in very slow running code
  * Some positioning (e.g. ship bullets)
  * Entity generation can easily get glitched
+ * Changing game scale isn't recommended
 
 ### Assets:
 
