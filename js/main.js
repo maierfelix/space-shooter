@@ -32,6 +32,7 @@ let GET = (url, resolve) => {
 };
 
 let init = () => {
+  window.addEventListener("resize", resize);
   resize();
   generateOverlays();
 	loadSprites(ressources).then((data) => {

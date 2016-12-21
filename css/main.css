@@ -12,9 +12,13 @@
 }
 
 html {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #020512 100%);
-  /*background-image: url("../img/bg.jpg");*/
-  //background: #000;
+
+  background-color: #1b2735;
+  background-image: -webkit-radial-gradient(ellipse at bottom, #1b2735 0%, #020512 100%);
+  background-image:    -moz-radial-gradient(ellipse at bottom, #1b2735 0%, #020512 100%);
+  background-image:      -o-radial-gradient(ellipse at bottom, #1b2735 0%, #020512 100%);
+  background-image:         radial-gradient(ellipse at bottom, #1b2735 0%, #020512 100%);
+
   overflow: hidden;
 }
 body {
