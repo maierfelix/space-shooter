@@ -211,7 +211,7 @@ class Entity {
     shield.x = (target.x) + radius * Math.cos(shield.angle);
     shield.y = (target.y) + radius * Math.sin(shield.angle);
     */
-    this.shield.color += 4;
+    this.shield.color += 4*SPEED;
     if (this.shield.color >= 360) this.shield.color = 0;
   }
 
