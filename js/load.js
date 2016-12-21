@@ -1,18 +1,5 @@
 "use strict";
 
-let load = (src) => {
-  if (src.match("js")) {
-    let el = document.createElement("script");
-    el.src = src + "?" + Date.now();
-    document.body.appendChild(el);
-  } else {
-    let el = document.createElement("link");
-    el.rel = "stylesheet";
-    el.href = src + "?" + Date.now();
-    document.head.appendChild(el);
-  }
-};
-
 let res = [
   "js/immediate.js",
   "js/render.js",
@@ -29,4 +16,22 @@ let res = [
   "js/listeners.js"
 ];
 
-res.map((item) => load(item));
+let load = (idx) => {
+  let src = res[idx];
+  if (!src) return void 0;
+  if (src.match("js")) {
+    let el = document.createElement("script");
+    el.onload = function() {
+      load(++idx);
+    };
+    el.src = src + "?" + Date.now();
+    document.body.appendChild(el);
+  } else {
+    let el = document.createElement("link");
+    el.rel = "stylesheet";
+    el.href = src + "?" + Date.now();
+    document.head.appendChild(el);
+  }
+};
+
+load(0);
