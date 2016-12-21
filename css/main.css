@@ -1,17 +1,4 @@
 @font-face {
-  font-family: 'Conso';
-  src: url("../font/Conso.woff") format("woff"), url("../font/Conso.ttf") format("truetype");
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: 'ConsoItalic';
-  src: url("../font/Conso-Italic.woff") format("woff"), url("../font/Conso-Italic.ttf") format("truetype");
-  font-style: italic;
-  font-stretch: normal;
-}
-
-@font-face {
   font-family: 'Kenny';
   src: url("../font/kenvector_future.ttf") format("truetype");
   font-style: normal;
