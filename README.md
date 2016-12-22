@@ -16,8 +16,8 @@ Entities:
 
  * Pills: Explode when colliding with player ship, chain explosions.
  * Stars: Silver (1 pts), gold (2 pts)
- * Magnet: Is a magnet
- * Shield: Does shit
+ * Magnets: Attracts stars
+ * Shield: Lowered damage for x seconds
 
 Configuration file is [here](https://github.com/maierfelix/space-shooter/blob/master/js/cfg.js).
 
