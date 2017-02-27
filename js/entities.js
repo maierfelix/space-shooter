@@ -69,7 +69,7 @@ class Entity {
       this.width = this.texture.canvas.width / DIM;
       this.height = this.texture.canvas.height / DIM;
     }
-    this.radius = Math.sqrt((this.width)**2 + (this.height)**2) * 0.25;
+    this.radius = Math.sqrt(Math.pow(this.width, 2) + Math.pow(this.height, 2)) * 0.25;
     this.magnetRadius = this.radius * MAGNET_RADIUS;
     if (this instanceof Bullet) {
       this.radius /= 1.5;
